@@ -1,0 +1,513 @@
+@font-face {
+    font-family: 'AlteHaas';
+    src: url("../fonts/AlteHaasGroteskRegular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AlteHaas';
+    src: url("../fonts/AlteHaasGroteskBold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DentonTextX';
+    src: url("../fonts/DentonTextXCondTest-Thin.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Asgard';
+    src: url("../fonts/Asgard.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pamors';
+    src: url("../fonts/pamorsregular-alo2g.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MrsSaintDelafield';
+    src: url("../fonts/MrsSaintDelafield-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EpicalComeback';
+    src: url("../fonts/EpicalComebackPersonalUseOn-rgP6x.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ladi';
+    src: url("../fonts/Ladi-Gross.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Megren';
+    src: url("../fonts/MegrendemoRegular-OVxz6.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FFCairo';
+    src: url("../fonts/FFCairo.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ballet';
+    src: url("../fonts/Ballet-Regular-VariableFont_opsz.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DentonMedium';
+    src: url("../fonts/DentonTextXCondTest-Medium.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+}
+
+.homepage {
+    background-color: black;
+}
+
+.homepage_hero, .video {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.homepage_hero h2 {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: opacity 0.2s ease-in;
+    margin-bottom: 0;
+}
+
+.homepage_hero h2.active {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+}
+
+i.hidden, .menu-inner.hidden {
+    display: none;
+}
+
+.navigation {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+}
+
+.navigation i {
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.navigation .menu-inner {
+    padding-top: 10px;
+}
+
+.navigation .menu-inner li, .navigation .menu-inner li a {
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    font-size: 25px;
+    color: white;
+    font-family: AlteHaas;
+    text-transform: uppercase;
+}
+
+#horizontal-section {
+    display: flex;
+}
+
+#horizontal-section div {
+    width: 1000px;
+}
+
+.vertical-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticky-container main {
+    overflow-x: hidden;
+    display: flex;
+    position: sticky;
+    top:0;
+}
+
+.sticky-container section {
+    min-height: 100vh;
+    display: flex;
+    /*min-width: 40vw;*/
+    padding: 20vh 0;
+}
+
+.sticky-container section img {
+    height: fit-content;
+}
+
+.hero_button {
+    font-family: AlteHaas;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 35px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.hero_button:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.homepage_hero h5 {
+    font-family: AlteHaas;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.homepage_topheader {
+    display: flex;
+    justify-content: center;
+}
+.homepage_hero h1 {
+    font-family: AlteHaas;
+    font-weight: 700;
+    font-size: 105px;
+    text-transform: uppercase;
+    line-height: 125px;
+    color: white;
+    text-shadow: 0px 3px 6px #00000029;
+}
+
+#dentonX {
+    font-family: DentonTextX;
+    font-weight: 200;
+    color: white;
+    font-size: 235px;
+    text-align: center;
+    line-height: 320px;
+}
+
+#ballet {
+    font-family: Ballet;
+    font-weight: 400;
+    color: white;
+    font-size: 235px;
+    text-align: center;
+    line-height: 320px;
+}
+
+#asgard {
+    font-family: Asgard;
+    font-weight: 400;
+    color: white;
+    font-size: 235px;
+    text-align: center;
+    line-height: 320px;
+}
+
+#ffcairo {
+    font-family: FFCairo;
+    font-weight: 400;
+    color: white;
+    font-size: 235px;
+    text-align: center;
+    line-height: 320px;
+}
+
+#megren {
+    font-family: Megren;
+    font-weight: 400;
+    color: white;
+    font-size: 235px;
+    text-align: center;
+    line-height: 320px;
+}
+
+#ladi {
+    font-family: Ladi;
+    font-weight: 400;
+    color: white;
+    font-size: 235px;
+    text-align: center;
+    line-height: 320px;
+}
+
+.homepage_hero a.hero_button:last-child {
+    margin-right: 0;
+}
+
+#epical_comeback {
+    font-family: EpicalComeback;
+    font-weight: 400;
+    color: white;
+    font-size: 235px;
+    text-align: center;
+    line-height: 320px;
+}
+
+#mrs_saint {
+    font-family: MrsSaintDelafield;
+    font-weight: 400;
+    color: white;
+    font-size: 235px;
+    text-align: center;
+    line-height: 320px;
+}
+
+#pamors {
+    font-family: Pamors;
+    font-weight: 400;
+    color: white;
+    font-size: 235px;
+    text-align: center;
+    line-height: 320px;
+}
+
+.end_buttons {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.end_buttons a {
+    font-family: Pamors;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    justify-content: center;
+    border: 2px solid white;
+    width: 650px;
+    padding: 20px 0;
+    text-decoration: none;
+    display: block;
+    margin: 50px auto;
+}
+
+.end_buttons a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.end_buttons h5 {
+    font-family: AlteHaas;
+    font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 250px;
+}
+
+.horizontal_header {
+    margin-left: 20%;
+    width: 60vw;
+}
+
+.horizontal_header h2 {
+    font-family: AlteHaas;
+    font-weight: 700;
+    font-size: 60px;
+    color: white;
+    width: 60vw;
+}
+
+.horizontal_header h5 {
+    font-family: AlteHaas;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.horizontal_header {
+    width: 80vw;
+}
+
+.whole_how_to_win {
+    background: url("../images/CS4.png");
+    background-size: cover;
+}
+
+.how-to-win {
+    background: url("../images/TCS.png");
+    background-size: 220%;
+    background-position: 64% 53%;
+    height: 100vh;
+    padding: 15vh 0;
+}
+
+.how-to-win h1 {
+    font-family: DentonMedium;
+    font-weight: 600;
+    font-size: 85px;
+    color: black;
+    text-align: center;
+}
+
+.how-to-win h3 {
+    font-family: AlteHaas;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.numbers {
+    font-family: DentonMedium;
+    font-weight: 600;
+    font-size: 35px;
+    color: black;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.how-to-win a {
+    font-family: AlteHaas;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+    padding: 10px 40px;
+    border: 1px solid black;
+    border-radius: 35px;
+    display: block;
+    width: fit-content;
+    margin: 40px auto;
+}
+
+.how-to-win a:hover {
+    color: white !important;
+    background-color: black;
+    border: none;
+}
+
+.right-corner {
+    text-align: right;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    font-family: AlteHaas;
+    font-weight: 700;
+    font-size: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    margin-bottom: 14vh;
+}
+
+.spotify-player {
+    width: 300px;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+ }
+
+.spotify-player iframe {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -10;
+    transition: all 0.2s ease-in-out;
+    height: 0;
+}
+
+.spotify-player:hover iframe {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1000;
+    height: auto;
+}
+
+body .faq_page {
+    width: 100%;
+    padding-left: 20px;
+    background-image: url("../images/Texturelabs_Paper_312XL.jpg");
+}
+
+.faq_page h1 {
+    font-family: DentonMedium;
+    font-weight: 400;
+    font-size: 95px;
+    color: white;
+    margin-bottom: 40px;
+    padding-top: 100px;
+}
+
+.header_faq {
+    background-image: url("../images/TCS.png");
+}
+.accordion-button {
+    font-family: AlteHaas;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.accordion-body {
+    font-family: AlteHaas;
+    font-weight: 700;
+    font-size: 23px;
+    color: black;
+    text-transform: uppercase;
+    line-height: 28px;
+}
+
+.accordion {
+    --bs-accordion-bg: transparent;
+    --bs-accordion-border-width: 0;
+}
+.accordion-header {
+   background: transparent !important;
+}
+button.accordion-button {
+    background: transparent !important;
+    border-style: none !important;
+    color: black !important;
+    box-shadow: none !important;
+}
+
+.accordion-button::after {
+    width: 0 !important;
+}
