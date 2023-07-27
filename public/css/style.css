@@ -461,21 +461,24 @@ i.hidden, .menu-inner.hidden {
 
 body .faq_page {
     width: 100%;
-    padding-left: 20px;
     background-image: url("../images/Texturelabs_Paper_312XL.jpg");
 }
 
 .faq_page h1 {
     font-family: DentonMedium;
     font-weight: 400;
-    font-size: 95px;
+    font-size: 85px;
     color: white;
-    margin-bottom: 40px;
+    padding-bottom: 70px;
     padding-top: 100px;
+    padding-left: 30px;
 }
 
 .header_faq {
-    background-image: url("../images/TCS.png");
+    background-image: url("../images/TCS_black.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: -39% 25%;
 }
 .accordion-button {
     font-family: AlteHaas;
