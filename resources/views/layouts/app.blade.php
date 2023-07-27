@@ -30,6 +30,15 @@
 
     <div id="app">
 
+        <div class="right-corner">
+            <p>40° 48’ 17.0964’’ N 73° 56’ 10.8528’’ W<br> 158 E 126TH ST, NEW YORK<br> NY 10035</p>
+        </div>
+
+        <div class="spotify-player">
+            <iframe style="border-radius:12px; position: relative;top: 80px;" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO3DbIU8?utm_source=generator" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <p><i class="fa-solid fa-play"></i> Tracks</p>
+        </div>
+
         <div class="navigation">
             <div class="burger-bar">
                 <i class="fa-solid fa-bars"></i>

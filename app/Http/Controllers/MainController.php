@@ -23,4 +23,8 @@ class MainController extends Controller
         return view('rules');
     }
 
+    public function showApartmentPreview() {
+        return view('apartment-preview');
+    }
+
 }

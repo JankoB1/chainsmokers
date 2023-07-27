@@ -2,17 +2,7 @@
 
 @section('content')
 
-    <div class="spotify-player">
-        <iframe style="border-radius:12px; position: relative;top: 80px;" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO3DbIU8?utm_source=generator" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <p>Tracks</p>
-    </div>
-
     <section class="homepage">
-
-        <div class="right-corner">
-            <p>40° 48’ 17.0964’’ N 73° 56’ 10.8528’’ W<br> 158 E 126TH ST, NEW YORK<br> NY 10035</p>
-        </div>
-
         <div class="homepage_hero">
             <div class="homepage_topheader">
                 <div>
@@ -94,8 +84,14 @@
         </main>
     </div>
     <div class="end_buttons">
-        <a class="apply">APPLY HERE</a>
-        <a class="apartment">APARTMENT</a>
+        <div class="apply-here-cont">
+            <a class="apply">APPLY HERE</a>
+            <img src="{{ asset('images/TCS2.png') }}" alt="">
+        </div>
+        <div class="apartment-cont">
+            <a class="apartment">APARTMENT</a>
+            <img src="{{ asset('images/TCS2.png') }}" alt="">
+        </div>
         <h5>SPECIAL THANKS TO OUR PARTNERS</h5>
         <img src="" alt="smile">
         <img src="" alt="chainsmokers">

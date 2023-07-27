@@ -108,6 +108,7 @@ i.hidden, .menu-inner.hidden {
     position: fixed;
     left: 15px;
     top: 15px;
+    z-index: 10000;
 }
 
 .navigation i {
@@ -198,6 +199,7 @@ i.hidden, .menu-inner.hidden {
 .homepage_topheader {
     display: flex;
     justify-content: center;
+    margin-top: 15vh;
 }
 .homepage_hero h1 {
     font-family: AlteHaas;
@@ -207,6 +209,14 @@ i.hidden, .menu-inner.hidden {
     line-height: 125px;
     color: white;
     text-shadow: 0px 3px 6px #00000029;
+}
+
+.spotify-player p {
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: AlteHaas;
 }
 
 #dentonX {
@@ -431,9 +441,12 @@ i.hidden, .menu-inner.hidden {
     font-family: AlteHaas;
     font-weight: 700;
     font-size: 16px;
-    padding-right: 16px;
-    padding-top: 16px;
     margin-bottom: 14vh;
+    position: fixed;
+    right: 16px;
+    top: 16px;
+    width: fit-content;
+    z-index: 1000;
 }
 
 .spotify-player {
@@ -450,6 +463,7 @@ i.hidden, .menu-inner.hidden {
     z-index: -10;
     transition: all 0.2s ease-in-out;
     height: 0;
+    margin-bottom: 20px;
 }
 
 .spotify-player:hover iframe {
@@ -510,4 +524,40 @@ button.accordion-button {
 
 .accordion-button::after {
     width: 0 !important;
+}
+
+.apply-here-cont, .apartment-cont {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.apply-here-cont img, .apartment-cont img {
+    display: none;
+    position: absolute;
+    width: 150px;
+}
+
+.apartment-cont:hover img, .apply-here-cont:hover img {
+    display: block;
+}
+
+.apply-here-cont img {
+    top: 0;
+    left: -100px;
+    transform: rotate(-15deg);
+}
+
+.apartment-cont img {
+    top: 0;
+    right: -100px;
+    transform: rotate(15deg);
+}
+
+.apartment-preview-cont img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
