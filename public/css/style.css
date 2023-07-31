@@ -246,7 +246,7 @@ i.hidden, .menu-inner.hidden {
     font-family: Asgard;
     font-weight: 400;
     color: white;
-    font-size: 235px;
+    font-size: 145px;
     text-align: center;
     line-height: 320px;
 }
@@ -255,7 +255,7 @@ i.hidden, .menu-inner.hidden {
     font-family: FFCairo;
     font-weight: 400;
     color: white;
-    font-size: 235px;
+    font-size: 130px;
     text-align: center;
     line-height: 320px;
 }
@@ -264,7 +264,7 @@ i.hidden, .menu-inner.hidden {
     font-family: Megren;
     font-weight: 400;
     color: white;
-    font-size: 235px;
+    font-size: 145px;
     text-align: center;
     line-height: 320px;
 }
@@ -273,7 +273,7 @@ i.hidden, .menu-inner.hidden {
     font-family: Ladi;
     font-weight: 400;
     color: white;
-    font-size: 235px;
+    font-size: 165px;
     text-align: center;
     line-height: 320px;
 }
@@ -286,7 +286,7 @@ i.hidden, .menu-inner.hidden {
     font-family: EpicalComeback;
     font-weight: 400;
     color: white;
-    font-size: 235px;
+    font-size: 165px;
     text-align: center;
     line-height: 320px;
 }
@@ -304,7 +304,7 @@ i.hidden, .menu-inner.hidden {
     font-family: Pamors;
     font-weight: 400;
     color: white;
-    font-size: 235px;
+    font-size: 175px;
     text-align: center;
     line-height: 320px;
 }
@@ -478,12 +478,12 @@ i.hidden, .menu-inner.hidden {
     height: auto;
 }
 
-body .faq_page {
+body .faq_page, .rules_page {
     width: 100%;
     background-image: url("../images/Texturelabs_Paper_312XL.jpg");
 }
 
-.faq_page h1 {
+.faq_page, .rules_page h1 {
     font-family: DentonMedium;
     font-weight: 400;
     font-size: 85px;
@@ -493,7 +493,7 @@ body .faq_page {
     padding-left: 30px;
 }
 
-.header_faq {
+.header_faq, .header_rules {
     background-image: url("../images/TCS_black.png");
     background-size: contain;
     background-repeat: no-repeat;
