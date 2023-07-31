@@ -481,9 +481,10 @@ i.hidden, .menu-inner.hidden {
 body .faq_page, .rules_page {
     width: 100%;
     background-image: url("../images/Texturelabs_Paper_312XL.jpg");
+    background-size: cover;
 }
 
-.faq_page, .rules_page h1 {
+.faq_page h1, .rules_page h1 {
     font-family: DentonMedium;
     font-weight: 400;
     font-size: 85px;
@@ -765,6 +766,26 @@ button.accordion-button {
     font-size: 23px;
     line-height: 28px;
     color: white;
+}
+
+.rules_content, .accordion-flush {
+    padding: 0 20px 60px 20px;
+}
+
+.rules_content h3 {
+    font-family: AlteHaas;
+    font-weight: 700;
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.rules_content p {
+    font-family: AlteHaas;
+    font-weight: 400;
+    font-size: 23px;
+    color: black;
+    text-transform: uppercase;
 }
 
 .second-step .custom-fg {
