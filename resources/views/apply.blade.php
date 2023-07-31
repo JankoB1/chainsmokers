@@ -5,7 +5,7 @@
     <div class="apply-container">
         <div class="apply-form-inner">
             <form action="#" method="post">
-                <div class="first-step single-step active">
+                <div class="first-step single-step">
                     <div class="custom-fg">
                         <label for="first_name">First name*</label>
                         <input type="text" name="first_name" id="first_name" required placeholder="John">
@@ -35,7 +35,7 @@
                         <input type="text" name="city" id="city" required placeholder="New York City">
                     </div>
                 </div>
-                <div class="second-step single-step">
+                <div class="second-step single-step active">
                     <div class="custom-fg">
                         <label for="why">Why do you deserve to win a free year at the smile?*</label>
                         <textarea name="why" id="why" cols="30" rows="10"></textarea>
@@ -56,7 +56,7 @@
                 <div class="single-step third-step">
                     <h2>Bonus entry</h2>
                     <h5>Submit a creative tiktok!</h5>
-                    <p>SUBMIT A CREATIVE TIKTOK! Whether it’s a dance routine, a song performance, or an engaging storytelling experience, the only requirement is that you ingeniously incorporate the word “Smile” into your creation. This is your chance to show us your imagination and skills, so be really creative. Don’t forget to include the hashtag #TheChainsmokersGiveaway to join the exciting contest.</p>
+                    <p>Whether it’s a dance routine, a song performance, or an engaging storytelling experience, the only requirement is that you ingeniously incorporate the word “Smile” into your creation. This is your chance to show us your imagination and skills, so be really creative. Don’t forget to include the hashtag #TheChainsmokersGiveaway to join the exciting contest.</p>
                     <div class="custom-fg">
                         <input type="checkbox" name="tc" id="tc">
                         <label for="tc">I agree to terms and conditions</label>

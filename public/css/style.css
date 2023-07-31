@@ -701,3 +701,61 @@ button.accordion-button {
     visibility: hidden;
     z-index: -10000;
 }
+
+.third-step h2 {
+    width: 100%;
+    font-family: DentonMedium;
+    font-weight: 600;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    line-height: 133px;
+    margin-bottom: 20px;
+}
+
+.third-step h5 {
+    width: 100%;
+    text-transform: uppercase;
+    font-family: AlteHaas;
+    font-weight: 400;
+    font-size: 23px;
+    color: white;
+    line-height: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.third-step p {
+    width: 55%;
+    margin: 15px auto;
+    font-family: AlteHaas;
+    font-weight: 400;
+    font-size: 23px;
+    color: white;
+    line-height: 28px;
+    text-align: center;
+}
+
+.third-step .note {
+    width: 100%;
+    margin: 15px auto;
+    font-family: AlteHaas;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+.third-step .custom-fg {
+    width: 100%;
+    margin: 15px auto;
+}
+.custom-fg label {
+    font-family: AlteHaas;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    color: white;
+}
+
