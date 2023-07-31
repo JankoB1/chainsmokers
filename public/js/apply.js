@@ -7,6 +7,9 @@ let thirdStep = document.querySelector('.third-step');
 let prevButton = document.querySelector('.steps-buttons button.prev');
 let nextButton = document.querySelector('.steps-buttons button.next');
 
+let prevButtonCb = document.querySelector('.cb-buttons .cb-prev');
+let nextButtonCb = document.querySelector('.cb-buttons .cb-next');
+
 prevButton.addEventListener('click', function() {
     let activeStep = document.querySelector('.single-step.active');
     if(activeStep) {
@@ -34,4 +37,15 @@ nextButton.addEventListener('click', function () {
     }
 
     currentStep++;
+});
+
+prevButtonCb.addEventListener('click', function() {
+    let activeStep = document.querySelector('.single-step.active');
+    if(activeStep) {
+        activeStep.classList.remove('active');
+    }
+
+    secondStep.classList.add('active');
+    prevButton.classList.remove('disabled');
+    nextButton.classList.remove('disabled');
 });
