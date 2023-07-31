@@ -197,6 +197,10 @@ i.hidden, .menu-inner.hidden {
     margin-bottom: 40px;
 }
 
+.homepage_hero div div h5 {
+    margin-bottom: 0;
+}
+
 .homepage_topheader {
     display: flex;
     justify-content: center;
@@ -491,9 +495,9 @@ body .faq_page {
 
 .header_faq {
     background-image: url("../images/TCS_black.png");
-    background-size: 50%;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: -39% 25%;
+    background-position: -340px;
 }
 .accordion-button {
     font-family: AlteHaas;
@@ -580,6 +584,39 @@ button.accordion-button {
 
 .apply-form-inner .single-step {
     display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.apply-form-inner .custom-fg {
+    width: calc(50% - 6px);
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.apply-form-inner .custom-fg input {
+    width: 100%;
+    padding-left: 50%;
+    text-align: right;
+    background: #000000 0% 0% no-repeat padding-box;
+    border: 3px solid #FFFFFF;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    font-size: 23px;
+    font-family: AlteHaas;
+    padding-right: 5px;
+}
+
+.apply-form-inner .custom-fg label {
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    text-align: left;
+    font-size: 23px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
 }
 
 .apply-form-inner .single-step.active {
@@ -589,6 +626,7 @@ button.accordion-button {
 .apply-form-inner {
     width: 90%;
     padding: 25vh 5% !important;
+    margin: 0 auto;
 }
 
 .partners {
@@ -597,6 +635,7 @@ button.accordion-button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .noise p {
@@ -639,4 +678,26 @@ button.accordion-button {
     transform: rotate(-10deg);
     bottom: 30px;
     right: -90px;
+}
+
+.apply-container .steps-buttons {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.apply-container .steps-buttons button {
+    border: 3px solid #FFFFFF;
+    border-radius: 50px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 32px;
+    background: transparent;
+    padding: 2px 50px;
+}
+
+.apply-container .steps-buttons button.disabled {
+    visibility: hidden;
+    z-index: -10000;
 }

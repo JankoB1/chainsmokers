@@ -53,13 +53,27 @@
                         <textarea name="about" id="about" cols="30" rows="10"></textarea>
                     </div>
                 </div>
+                <div class="single-step third-step">
+                    <h2>Bonus entry</h2>
+                    <h5>Submit a creative tiktok!</h5>
+                    <p>SUBMIT A CREATIVE TIKTOK! Whether it’s a dance routine, a song performance, or an engaging storytelling experience, the only requirement is that you ingeniously incorporate the word “Smile” into your creation. This is your chance to show us your imagination and skills, so be really creative. Don’t forget to include the hashtag #TheChainsmokersGiveaway to join the exciting contest.</p>
+                    <div class="custom-fg">
+                        <input type="checkbox" name="tc" id="tc">
+                        <label for="tc">I agree to terms and conditions</label>
+                    </div>
+                    <p class="note">Send your application and try to win the apartment</p>
+                </div>
             </form>
         </div>
 
         <div class="steps-buttons">
-            <button class="prev">Previous</button>
+            <button class="prev disabled">Previous</button>
             <button class="next">Next</button>
         </div>
     </div>
 
+@endsection
+
+@section('scriptsBottom')
+    <script type="text/javascript" src="{{ asset('js/apply.js') }}"></script>
 @endsection
