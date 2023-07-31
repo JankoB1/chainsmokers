@@ -586,6 +586,7 @@ button.accordion-button {
     display: none;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 25vh 5% !important;
 }
 
 .apply-form-inner .custom-fg {
@@ -625,7 +626,6 @@ button.accordion-button {
 
 .apply-form-inner {
     width: 90%;
-    padding: 25vh 5% !important;
     margin: 0 auto;
 }
 
@@ -759,3 +759,68 @@ button.accordion-button {
     color: white;
 }
 
+.second-step .custom-fg {
+    text-align: right;
+    background: #000000 0% 0% no-repeat padding-box;
+    border: 3px solid #FFFFFF;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    font-size: 23px;
+    font-family: AlteHaas;
+    padding-right: 5px;
+    height: fit-content;
+}
+
+.second-step .custom-fg label {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.second-step .custom-fg textarea {
+    width: 100%;
+    padding: 0 10px 10px 10px;
+    letter-spacing: 0px;
+    font-size: 23px;
+    font-family: AlteHaas;
+    background: #000000 0% 0% no-repeat padding-box;
+    border: none;
+    outline: none !important;
+    color: white;
+    background-image: url("../images/textarea.png");
+}
+
+.apply-container {
+    position: relative;
+}
+
+.steps-buttons {
+    position: absolute;
+    bottom: 17vh;
+    left: 10%;
+}
+
+.custom-fg-cb {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.custom-fg-cb input {
+    margin-right: 5px;
+}
+
+.custom-fg-cb label {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-family: AlteHaas;
+}
+
+.cb-buttons {
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+}

@@ -38,30 +38,34 @@
                 <div class="second-step single-step active">
                     <div class="custom-fg">
                         <label for="why">Why do you deserve to win a free year at the smile?*</label>
-                        <textarea name="why" id="why" cols="30" rows="10"></textarea>
+                        <textarea name="why" id="why" cols="30" rows="2"></textarea>
                     </div>
                     <div class="custom-fg">
                         <label for="goals">WHAT ARE YOUR GOALS DURING YOUR FREE YEAR?*</label>
-                        <textarea name="goals" id="goals" cols="30" rows="10"></textarea>
+                        <textarea name="goals" id="goals" cols="30" rows="2"></textarea>
                     </div>
                     <div class="custom-fg">
                         <label for="impact">WHAT IMPACTS YOUR CREATIVE VISION WHEN YOU’RE MAKING MUSIC?</label>
-                        <textarea name="impact" id="impact" cols="30" rows="10"></textarea>
+                        <textarea name="impact" id="impact" cols="30" rows="2"></textarea>
                     </div>
                     <div class="custom-fg">
                         <label for="about">TELL US ABOUT YOUR ARTISTIC JOURNEY. HOW DID YOU DISCOVER YOUR PASSION FOR MUSIC, AND WHO HAS INFLUENCED THAT PASSION?</label>
-                        <textarea name="about" id="about" cols="30" rows="10"></textarea>
+                        <textarea name="about" id="about" cols="30" rows="6"></textarea>
                     </div>
                 </div>
                 <div class="single-step third-step">
                     <h2>Bonus entry</h2>
                     <h5>Submit a creative tiktok!</h5>
                     <p>Whether it’s a dance routine, a song performance, or an engaging storytelling experience, the only requirement is that you ingeniously incorporate the word “Smile” into your creation. This is your chance to show us your imagination and skills, so be really creative. Don’t forget to include the hashtag #TheChainsmokersGiveaway to join the exciting contest.</p>
-                    <div class="custom-fg">
+                    <div class="custom-fg-cb">
                         <input type="checkbox" name="tc" id="tc">
                         <label for="tc">I agree to terms and conditions</label>
                     </div>
                     <p class="note">Send your application and try to win the apartment</p>
+                    <div class="cb-buttons">
+                        <button class="cb-prev">Previous</button>
+                        <button type="submit" class="cb-next">Send</button>
+                    </div>
                 </div>
             </form>
         </div>
