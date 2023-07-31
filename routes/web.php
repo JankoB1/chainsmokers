@@ -9,6 +9,7 @@ Route::get('/how-to-win', [MainController::class, 'showHowToWin'])->name('show-h
 Route::get('/rules', [MainController::class, 'showRules'])->name('show-rules');
 Route::get('faq', [MainController::class, 'showFaq'])->name('show-faq');
 Route::get('/apartment-preview', [MainController::class, 'showApartmentPreview'])->name('show-apartment-preview');
+Route::get('/apply', [MainController::class, 'showApply'])->name('show-apply');
 
 Auth::routes();
 

@@ -27,4 +27,8 @@ class MainController extends Controller
         return view('apartment-preview');
     }
 
+    public function showApply() {
+        return view('apply');
+    }
+
 }

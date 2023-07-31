@@ -6,7 +6,7 @@
         <div class="homepage_hero">
             <div class="homepage_topheader">
                 <div>
-                    <h3>the smile</h3>
+                    <img src="{{ asset('images/the smile w.png') }}" width="200" alt="smile">
                     <h5>presents</h5>
                 </div>
                 <h1>Artist in</h1>
@@ -20,6 +20,10 @@
             <h2 id="epical_comeback">Residence</h2>
             <h2 id="mrs_saint">Residence</h2>
             <h2 id="pamors">Residence</h2>
+            <div class="tcs-logos">
+                <img src="{{ asset('images/TCS Logo black.png') }}" alt="logo">
+                <img src="{{ asset('images/TCS Logo black.png') }}" alt="logo">
+            </div>
             <h5>one lucky artist can win the apartment of their dreams in nyc.<br>
             designed by the chainsmokers in collaboration with the smile.</h5>
             <a class="hero_button">APPLY HERE</a>
@@ -93,9 +97,11 @@
             <img src="{{ asset('images/TCS2.png') }}" alt="">
         </div>
         <h5>SPECIAL THANKS TO OUR PARTNERS</h5>
-        <img src="" alt="smile">
-        <img src="" alt="chainsmokers">
-        <img src="" alt="jaja">
+        <div class="partners">
+            <img src="{{ asset('images/the smile w.png') }}" alt="smile" width="116">
+            <img src="{{ asset('images/TCS Logo black.png') }}" width="139" style="filter: invert(1);" alt="chainsmokers">
+            <img src="{{ asset('images/jaja w.png') }}" width="93" alt="jaja">
+        </div>
     </div>
 
 @endsection

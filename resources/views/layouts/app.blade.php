@@ -28,7 +28,7 @@
 </head>
 <body>
 
-    <div id="app">
+    <div id="app" class="{{ Request::path() == 'apartment-preview' || Request::path() == 'faq' || Request::path() == 'rules'? 'ap-page': '' }}">
 
         <div class="right-corner">
             <p>40° 48’ 17.0964’’ N 73° 56’ 10.8528’’ W<br> 158 E 126TH ST, NEW YORK<br> NY 10035</p>
@@ -39,18 +39,22 @@
             <p><i class="fa-solid fa-play"></i> Tracks</p>
         </div>
 
+        <div class="noise">
+            <p>Powered by</p>
+            <img src="{{ asset('images/logo-new.png') }}" alt="noise" width="130">
+        </div>
+
         <div class="navigation">
             <div class="burger-bar">
                 <i class="fa-solid fa-bars"></i>
                 <i class="fa-solid fa-x hidden"></i>
             </div>
             <div class="menu-inner hidden">
-                <li><a href="#"></a>Home</li>
-                <li><a href="#"></a>Apply</li>
-                <li><a href="#"></a>Apartment</li>
-                <li><a href="#"></a>About</li>
-                <li><a href="#"></a>FAQ</li>
-                <li><a href="#">Official rules</a></li>
+                <li><a href="{{ route('show-homepage') }}">Home</a></li>
+                <li><a href="{{ route('show-apply') }}">Apply</a></li>
+                <li><a href="{{ route('show-apartment-preview') }}">Apartment</a></li>
+                <li><a href="{{ route('show-faq') }}"></a>FAQ</li>
+                <li><a href="{{ route('show-rules') }}">Official rules</a></li>
             </div>
         </div>
 
