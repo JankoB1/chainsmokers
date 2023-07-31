@@ -6,7 +6,7 @@
         <div class="homepage_hero">
             <div class="homepage_topheader">
                 <div>
-                    <img src="{{ asset('images/the smile w.png') }}" width="200" alt="smile">
+                    <img src="{{ asset('images/the smile w.png') }}" style="margin-top: 20px;" width="200" alt="smile">
                     <h5>presents</h5>
                 </div>
                 <h1>Artist in</h1>
