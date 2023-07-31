@@ -5,7 +5,7 @@
     <section class="homepage">
         <div class="homepage_hero">
             <div class="homepage_topheader">
-                <div>
+                <div class="smile_image">
                     <img src="{{ asset('images/the smile w.png') }}" style="margin-top: 20px;" width="200" alt="smile">
                     <h5>presents</h5>
                 </div>
