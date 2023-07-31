@@ -26,8 +26,8 @@
             </div>
             <h5>one lucky artist can win the apartment of their dreams in nyc.<br>
             designed by the chainsmokers in collaboration with the smile.</h5>
-            <a class="hero_button">APPLY HERE</a>
-            <a class="hero_button">VIEW APARTMENT</a>
+            <a href="{{ route('show-apply') }}" class="hero_button">APPLY HERE</a>
+            <a href="{{ route('show-apartment-preview') }}" class="hero_button">VIEW APARTMENT</a>
         </div>
         <div class="video">
             <video src=""></video>
@@ -43,54 +43,54 @@
                 </div>
             </section>
             <section>
-                <img style="width: 600px;" src="{{ asset('images/TCS10.png') }}" alt="photo">
+                <img style="height: 55vh; margin: 0 25px;" src="{{ asset('images/TCS10.png') }}" alt="photo">
             </section>
             <section>
-                <img width="400" src="{{ asset('images/TCS4.png') }}" alt="photo">
+                <img style="height: 60vh; margin: 0 25px;" src="{{ asset('images/TCS4.png') }}" alt="photo">
             </section>
             <section>
                 <div class="row">
                     <div class="col">
-                        <img style="width: 50vw;" src="{{ asset('images/TCS9.png') }}" alt="photo">
-                        <div class="row">
+                        <img style="height: 30vh; margin: 0 0 0 75px;" src="{{ asset('images/TCS9.png') }}" alt="photo">
+                        <div class="row" style="margin: 0 25px;">
                             <div class="col-4">
-                                <img width="300" src="{{ asset('images/TCS8.png') }}" alt="photo">
+                                <img style="height: 30vh;" src="{{ asset('images/TCS8.png') }}" alt="photo">
                             </div>
                             <div class="col-4">
-                                <img width="300" src="{{ asset('images/TCS11.png') }}" alt="photo">
+                                <img style="height: 30vh;" src="{{ asset('images/TCS11.png') }}" alt="photo">
                             </div>
                             <div class="col-4">
-                                <img width="300" src="{{ asset('images/TCS12.png') }}" alt="photo">
+                                <img style="height: 30vh;" src="{{ asset('images/TCS12.png') }}" alt="photo">
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section>
-                <img width="400" src="{{ asset('images/TCS3.png') }}" alt="photo">
+                <img style="height: 45vh; margin: 15vh 25px 0 100px;" src="{{ asset('images/TCS3.png') }}" alt="photo">
             </section>
             <section>
-                <img style="height: 60vh;" src="{{ asset('images/TCS13.png') }}" alt="photo">
+                <img style="height: 60vh; margin: 0 25px;" src="{{ asset('images/TCS13.png') }}" alt="photo">
             </section>
             <section>
-                <img width="800" src="{{ asset('images/CS4.png') }}" alt="photo">
+                <img style="height: 30vh;" src="{{ asset('images/CS4.png') }}" alt="photo">
+            </section>
+            <section style="flex-direction: column;">
+                <img style="height: 29vh; margin: 0 25px 2vh" src="{{ asset('images/TCS1.png') }}" alt="photo">
+                <img style="height: 29vh; margin: 0 25px;" src="{{ asset('images/TCS2.png') }}" alt="photo">
             </section>
             <section>
-                <img width="400" src="{{ asset('images/TCS1.png') }}" alt="photo">
-                <img width="400" src="{{ asset('images/TCS2.png') }}" alt="photo">
-            </section>
-            <section>
-                <img width="800" src="{{ asset('images/TCS5.png') }}" alt="photo">
+                <img style="height: 60vh; margin-right: 30vw;" src="{{ asset('images/TCS5.png') }}" alt="photo">
             </section>
         </main>
     </div>
     <div class="end_buttons">
         <div class="apply-here-cont">
-            <a class="apply">APPLY HERE</a>
+            <a href="{{ route('show-apply') }}" class="apply">APPLY HERE</a>
             <img src="{{ asset('images/TCS5.png') }}" alt="apply button">
         </div>
         <div class="apartment-cont">
-            <a class="apartment">APARTMENT</a>
+            <a href="{{ route('show-apartment-preview') }}" class="apartment">APARTMENT</a>
             <img src="{{ asset('images/TCS13.png') }}" alt="apartment">
         </div>
         <h5>SPECIAL THANKS TO OUR PARTNERS</h5>

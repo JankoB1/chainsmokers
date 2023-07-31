@@ -13,7 +13,7 @@
     function setStickyContainersSize(){
         document.querySelectorAll('.sticky-container').forEach(function(container){
             const stikyContainerHeight = container.querySelector('main').scrollWidth;
-            container.setAttribute('style', 'height: ' + stikyContainerHeight + 'px');
+            container.setAttribute('style', 'height:  7000px');
         });
     }
 
@@ -35,8 +35,6 @@
         var isPlaceHolderBelowTop = containerInViewPort.offsetTop < document.documentElement.scrollTop;
         var isPlaceHolderBelowBottom = containerInViewPort.offsetTop + containerInViewPort.offsetHeight > document.documentElement.scrollTop;
         let g_canScrollHorizontally = isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
-
-        console.log(g_canScrollHorizontally);
 
         if(g_canScrollHorizontally){
             containerInViewPort.querySelector('main').scrollLeft += evt.deltaY;

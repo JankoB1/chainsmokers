@@ -11,7 +11,7 @@
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        HOW CAN I PARTICIPATE IN THE APARTMENT GIVEAWAY?
+                        <i class="fa-solid fa-plus"></i> HOW CAN I PARTICIPATE IN THE APARTMENT GIVEAWAY?
                     </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -24,7 +24,7 @@
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        IS THERE AN AGE OR LOCATION REQUIREMENT TO ENTER THE GIVEAWAY?
+                        <i class="fa-solid fa-plus"></i> IS THERE AN AGE OR LOCATION REQUIREMENT TO ENTER THE GIVEAWAY?
                     </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -38,7 +38,7 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseThree" aria-expanded="false"
                             aria-controls="flush-collapseThree">
-                        WHEN MUST MY ENTRY BE SUBMITTED?
+                        <i class="fa-solid fa-plus"></i> WHEN MUST MY ENTRY BE SUBMITTED?
                     </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse"
@@ -53,7 +53,7 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseFour" aria-expanded="false"
                             aria-controls="flush-collapseFour">
-                        HOW WILL THE WINNER BE SELECTED?
+                        <i class="fa-solid fa-plus"></i> HOW WILL THE WINNER BE SELECTED?
                     </button>
                 </h2>
                 <div id="flush-collapseFour" class="accordion-collapse collapse"
@@ -69,7 +69,7 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseFive" aria-expanded="false"
                             aria-controls="flush-collapseFive">
-                        CAN I ENTER THE GIVEAWAY MULTIPLE TIMES?
+                        <i class="fa-solid fa-plus"></i> CAN I ENTER THE GIVEAWAY MULTIPLE TIMES?
                     </button>
                 </h2>
                 <div id="flush-collapseFive" class="accordion-collapse collapse"
@@ -81,7 +81,7 @@
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                        IS THERE A FEE TO ENTER THE GIVEAWAY?
+                        <i class="fa-solid fa-plus"></i> IS THERE A FEE TO ENTER THE GIVEAWAY?
                     </button>
                 </h2>
                 <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -93,7 +93,7 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseSeven" aria-expanded="false"
                             aria-controls="flush-collapseTSeven">
-                        WHAT IS THE GRAND PRIZE?
+                        <i class="fa-solid fa-plus"></i> WHAT IS THE GRAND PRIZE?
                     </button>
                 </h2>
                 <div id="flush-collapseSeven" class="accordion-collapse collapse"
@@ -109,7 +109,7 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseEight" aria-expanded="false"
                             aria-controls="flush-collapseEight">
-                        WHAT KIND OF AMENITIES DOES THE APARTMENT COME WITH?
+                        <i class="fa-solid fa-plus"></i> WHAT KIND OF AMENITIES DOES THE APARTMENT COME WITH?
                     </button>
                 </h2>
                 <div id="flush-collapseEight" class="accordion-collapse collapse"
@@ -124,7 +124,7 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseNine" aria-expanded="false"
                             aria-controls="flush-collapseNine">
-                        THE SMILE BUILDING RULES
+                        <i class="fa-solid fa-plus"></i> THE SMILE BUILDING RULES
                     </button>
                 </h2>
                 <div id="flush-collapseNine" class="accordion-collapse collapse"
@@ -136,7 +136,7 @@
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-                        ANY OTHER QUESTIONS?
+                        <i class="fa-solid fa-plus"></i> ANY OTHER QUESTIONS?
                     </button>
                 </h2>
                 <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">

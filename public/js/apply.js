@@ -1,5 +1,7 @@
 let currentStep = 1;
 
+let applyContainer = document.querySelector('.apply-container');
+
 let firstStep = document.querySelector('.first-step');
 let secondStep = document.querySelector('.second-step');
 let thirdStep = document.querySelector('.third-step');
@@ -34,6 +36,7 @@ nextButton.addEventListener('click', function () {
         thirdStep.classList.add('active');
         this.classList.add('disabled');
         prevButton.classList.add('disabled');
+        applyContainer.classList.add('active-third');
     }
 
     currentStep++;
@@ -48,4 +51,7 @@ prevButtonCb.addEventListener('click', function() {
     secondStep.classList.add('active');
     prevButton.classList.remove('disabled');
     nextButton.classList.remove('disabled');
+    applyContainer.classList.remove('active-third');
+
+    currentStep--;
 });
