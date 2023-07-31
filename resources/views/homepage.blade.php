@@ -70,9 +70,6 @@
                 <img width="400" src="{{ asset('images/TCS3.png') }}" alt="photo">
             </section>
             <section>
-                <img width="400" src="{{ asset('images/TCS3.png') }}" alt="photo">
-            </section>
-            <section>
                 <img style="height: 60vh;" src="{{ asset('images/TCS13.png') }}" alt="photo">
             </section>
             <section>
@@ -83,18 +80,18 @@
                 <img width="400" src="{{ asset('images/TCS2.png') }}" alt="photo">
             </section>
             <section>
-                <img width="800" src="{{ asset('images/CS5.png') }}" alt="photo">
+                <img width="800" src="{{ asset('images/TCS5.png') }}" alt="photo">
             </section>
         </main>
     </div>
     <div class="end_buttons">
         <div class="apply-here-cont">
             <a class="apply">APPLY HERE</a>
-            <img src="{{ asset('images/TCS2.png') }}" alt="">
+            <img src="{{ asset('images/TCS5.png') }}" alt="apply button">
         </div>
         <div class="apartment-cont">
             <a class="apartment">APARTMENT</a>
-            <img src="{{ asset('images/TCS2.png') }}" alt="">
+            <img src="{{ asset('images/TCS13.png') }}" alt="apartment">
         </div>
         <h5>SPECIAL THANKS TO OUR PARTNERS</h5>
         <div class="partners">
