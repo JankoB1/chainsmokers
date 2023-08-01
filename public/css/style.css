@@ -935,8 +935,18 @@ button.accordion-button {
 }
 
 .sleeping-area-box {
-    top: 45%;
-    left: 80%;
+    top: 34%;
+    left: 58%;
+}
+
+.living-area-box {
+    top: 47%;
+    left: 65%;
+}
+
+.entry-area-box {
+    top: 26%;
+    left: 27%;
 }
 
 .apartment-preview-cont h2 {
@@ -1038,4 +1048,15 @@ button.accordion-button {
 
 .accordion-button {
     padding-left: 0 !important;
+}
+
+.image-preview-inner {
+    position: relative;
+}
+
+.smile-p {
+    padding: 2px 8px;
+    background: white;
+    width: 100px;
+    margin-bottom: 10px;
 }

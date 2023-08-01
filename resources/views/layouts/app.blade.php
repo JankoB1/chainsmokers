@@ -31,6 +31,7 @@
     <div id="app" class="{{ Request::path() == 'apartment-preview' || Request::path() == 'faq' || Request::path() == 'rules'? 'ap-page': '' }}">
 
         <div class="right-corner">
+            <img src="{{ asset('images/the smile purple.png') }}" alt="smile" class="smile-p">
             <p>40° 48’ 17.0964’’ N 73° 56’ 10.8528’’ W<br> 158 E 126TH ST, NEW YORK<br> NY 10035</p>
         </div>
 
