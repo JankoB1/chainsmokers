@@ -1060,3 +1060,93 @@ button.accordion-button {
     width: 100px;
     margin-bottom: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .homepage_topheader {
+        flex-direction: column !important;
+    }
+    .homepage_topheader h1 {
+        font-size: 56px !important;
+    }
+
+    .homepage_hero h2 {
+        font-size: 50px !important;
+        line-height: 130px !important;
+    }
+
+    #ffcairo {
+        font-size: 85px !important;
+    }
+
+    .tcs-logos img:first-child {
+        right: 120px !important;
+        top: 0;
+    }
+
+    .tcs-logos {
+        width: 100%;
+    }
+
+    .tcs-logos img:last-child {
+        right: 140px;
+        top: 2px;
+    }
+
+    .horizontal_header h2 {
+        font-size: 36px !important;
+    }
+
+    .horizontal_header h5 {
+        font-size: 16px !important;
+        margin-top: 5vh;
+    }
+
+    .hero_button {
+        font-size: 22px;
+    }
+
+    .end_buttons a {
+        width: 450px !important;
+        font-size: 70px !important;
+    }
+
+    .end_buttons h5 {
+        font-size: 24px !important;
+        padding-bottom: 30px;
+    }
+
+    .homepage_hero h5 {
+        font-size: 16px !important;
+        margin-top: 10vh;
+    }
+
+    .how-to-win {
+        background-size: 450% !important;
+        background-position: 60% 60% !important;
+    }
+
+    .accordion-button {
+        font-size: 24px !important;
+    }
+
+    .accordion-body {
+        font-size: 18px !important;
+    }
+
+    .rules_content .col-6 {
+        width: 100%;
+    }
+
+    .header_rules {
+        background-position: -320px;
+    }
+
+    .rules_content h3 {
+        font-size: 24px;
+    }
+
+    .rules_content p {
+        font-size: 18px;
+    }
+}
