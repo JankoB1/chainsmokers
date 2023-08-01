@@ -54,7 +54,7 @@
                 <li><a href="{{ route('show-homepage') }}">Home</a></li>
                 <li><a href="{{ route('show-apply') }}">Apply</a></li>
                 <li><a href="{{ route('show-apartment-preview') }}">Apartment</a></li>
-                <li><a href="{{ route('show-faq') }}"></a>FAQ</li>
+                <li><a href="{{ route('show-faq') }}">FAQ</a></li>
                 <li><a href="{{ route('show-rules') }}">Official rules</a></li>
             </div>
         </div>

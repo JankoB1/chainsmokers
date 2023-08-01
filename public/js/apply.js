@@ -14,6 +14,12 @@ let prevButtonCb = document.querySelector('.cb-buttons .cb-prev');
 let singleStepInputs = document.querySelectorAll('.single-step input');
 let whyTextarea = document.querySelector('textarea#why');
 
+let appContainer = document.querySelector('div#app');
+
+function scrollToUp() {
+    appContainer.scrollIntoView();
+}
+
 prevButton.addEventListener('click', function() {
     let activeStep = document.querySelector('.single-step.active');
     if(activeStep) {
@@ -23,6 +29,7 @@ prevButton.addEventListener('click', function() {
     firstStep.classList.add('active');
     this.classList.add('disabled');
     currentStep = 1;
+    scrollToUp();
 });
 
 nextButton.addEventListener('click', function () {
@@ -32,6 +39,7 @@ nextButton.addEventListener('click', function () {
             if(input.value === '') {
                 if(!empty) {
                     input.focus();
+                    input.scrollIntoView();
                     empty = true;
                 }
             }
@@ -44,6 +52,7 @@ nextButton.addEventListener('click', function () {
                 activeStep.classList.remove('active');
             }
             currentStep++;
+            scrollToUp();
         }
     } else if(currentStep === 2) {
         if(whyTextarea.value !== '') {
@@ -56,9 +65,11 @@ nextButton.addEventListener('click', function () {
             prevButton.classList.add('disabled');
             applyContainer.classList.add('active-third');
             currentStep++;
+            scrollToUp();
+        } else {
+            whyTextarea.focus();
+            whyTextarea.scrollIntoView();
         }
-    } else {
-        whyTextarea.focus();
     }
 });
 
@@ -74,4 +85,5 @@ prevButtonCb.addEventListener('click', function() {
     applyContainer.classList.remove('active-third');
 
     currentStep--;
+    scrollToUp();
 });

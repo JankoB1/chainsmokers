@@ -7,7 +7,14 @@
 
 {{--            <h2>This could be<br>your home</h2>--}}
 
-            <img src="{{ asset('images/CS01-min.png') }}" alt="apartment preview render">
+            <img src="{{ asset('images/CS01-min.png') }}" class="desc" alt="apartment preview render">
+            <img src="{{ asset('images/CS-MOBILE2.jpeg') }}" class="mobile" alt="apartment preview render">
+
+            <div class="apply-box">
+                <h2>This could be<br>your home</h2>
+                <a href="{{ route('show-apply') }}">Apply here</a>
+            </div>
+
             <div class="dot studio-box">
                 <div class="box-inner">
                     <div class="box">

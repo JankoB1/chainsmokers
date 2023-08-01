@@ -76,8 +76,10 @@ body {
     background-color: black;
 }
 
-.homepage {
-    background-color: black;
+.homepage-container {
+    background-image: url("../images/Texturelabs_Paper_177XL2.png");
+    background-size: contain;
+    background-repeat: repeat;
 }
 
 .homepage_hero, .video {
@@ -480,7 +482,7 @@ i.hidden, .menu-inner.hidden {
 
 body .faq_page, .rules_page {
     width: 100%;
-    background-image: url("../images/Texturelabs_Paper_312XL.jpg");
+    background-image: url("../images/Texturelabs_Paper_312XL.jpeg");
     background-size: cover;
 }
 
@@ -579,6 +581,11 @@ button.accordion-button {
 
 .ap-page .noise img {
     filter: invert(1);
+}
+
+.ap-page .smile-p {
+    border: 1px solid #651DCC;
+    background: transparent;
 }
 
 .apply-container {
@@ -883,6 +890,8 @@ button.accordion-button {
     position: absolute;
     z-index: 10;
     border-radius: 100%;
+    box-shadow: 0 0 0 10px rgb(219, 0, 0, 0.45);
+    cursor: pointer;
 }
 
 .apartment-preview-cont .dot .box-inner {
@@ -898,6 +907,10 @@ button.accordion-button {
     bottom: -15px;
     left: 5px;
     padding: 7px 40px 7px 7px;
+}
+
+.apartment-preview-cont .dot:hover {
+    z-index: 1000;
 }
 
 .apartment-preview-cont .dot:hover .box {
@@ -925,7 +938,7 @@ button.accordion-button {
 }
 
 .studio-box {
-    top: 31%;
+    top: 32%;
     left: 38%;
 }
 
@@ -953,10 +966,12 @@ button.accordion-button {
     text-align: right;
     font-size: 90px;
     font-weight: 600;
-    font-family: DentonTextX;
+    font-family: DentonTextX !important;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+    font-weight: 700;
+    line-height: 1em;
 }
 
 
@@ -1061,22 +1076,85 @@ button.accordion-button {
     margin-bottom: 10px;
 }
 
+.mobile {
+    display: none;
+}
+
+.apply-box {
+    position: absolute;
+    right: 5%;
+    bottom: 27%;
+    text-align: right;
+    z-index: 10;
+}
+
+.apply-box a {
+    text-align: center;
+    font-size: 32px;
+    font-family: AlteHaas;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+    border: 3px solid #000000;
+    border-radius: 39px;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+.apply-box a:hover {
+    color: white;
+    background: black;
+}
+
 @media only screen and (max-width: 768px) {
+
+    .apartment-preview-cont .dot .box {
+        padding: 7px !important;
+    }
+
+    .apartment-preview-cont .dot .box h4 {
+        font-size: 22px !important;
+        white-space: normal;
+
+    }
+
+    .apartment-preview-cont .dot .box p {
+        font-size: 12px !important;
+        white-space: normal;
+    }
+
+    .apartment-preview-cont p {
+        bottom: 10vh;
+    }
+
+    .apartment-preview-cont p, .apartment-preview-cont a {
+        font-size: 14px !important;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desc {
+        display: none;
+    }
 
     .homepage_topheader {
         flex-direction: column !important;
     }
     .homepage_topheader h1 {
-        font-size: 56px !important;
+        font-size: 46px !important;
+        line-height: unset;
     }
 
     .homepage_hero h2 {
-        font-size: 50px !important;
+        font-size: 65px !important;
         line-height: 130px !important;
     }
 
     #ffcairo {
-        font-size: 85px !important;
+        font-size: 45px !important;
     }
 
     .tcs-logos img:first-child {
@@ -1088,13 +1166,17 @@ button.accordion-button {
         width: 100%;
     }
 
+    .tcs-logos img {
+        width: 140px;
+    }
+
     .tcs-logos img:last-child {
         right: 140px;
         top: 2px;
     }
 
     .horizontal_header h2 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
 
     .horizontal_header h5 {
@@ -1102,22 +1184,27 @@ button.accordion-button {
         margin-top: 5vh;
     }
 
+    .homepage_hero div div h5 {
+        margin-top: 0 !important;
+    }
+
     .hero_button {
-        font-size: 22px;
+        font-size: 14px;
     }
 
     .end_buttons a {
-        width: 450px !important;
-        font-size: 70px !important;
+        width: 300px !important;
+        font-size: 35px !important;
+        padding: 10px 0;
     }
 
     .end_buttons h5 {
-        font-size: 24px !important;
+        font-size: 20px !important;
         padding-bottom: 30px;
     }
 
     .homepage_hero h5 {
-        font-size: 16px !important;
+        font-size: 20px !important;
         margin-top: 10vh;
     }
 
@@ -1138,8 +1225,8 @@ button.accordion-button {
         width: 100%;
     }
 
-    .header_rules {
-        background-position: -320px;
+    .header_faq, .header_rules {
+        background-position: -130px;
     }
 
     .rules_content h3 {
@@ -1149,4 +1236,105 @@ button.accordion-button {
     .rules_content p {
         font-size: 18px;
     }
+
+    .homepage_hero, .video {
+        width: 90%;
+    }
+
+    .partners {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .apply-here-cont img, .apartment-cont img {
+        width: 100px;
+    }
+
+    .apply-here-cont img {
+        left: -50px;
+    }
+
+    .apartment-cont img {
+        right: -50px;
+    }
+
+    .end_buttons a {
+        margin: 20px auto;
+    }
+
+    .end_buttons h5 {
+        margin-top: 130px;
+    }
+
+    .apply-form-inner .single-step {
+        padding: 16vh 0 5vh !important;
+    }
+
+    .apply-form-inner .custom-fg {
+        width: 100%;
+    }
+
+    .apply-form-inner .custom-fg label {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .apply-container .steps-buttons {
+        width: 90%;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        padding-bottom: 15vh;
+    }
+
+    .apply-container .steps-buttons button, .cb-buttons button {
+        font-size: 18px;
+    }
+
+    .third-step p {
+        width: 100%;
+    }
+
+    .custom-fg-cb label {
+        font-size: 17px;
+    }
+
+    .end_buttons {
+        width: 90%;
+    }
+
+    .accordion-body {
+        padding-top: 0 !important;
+    }
+
+    .entry-area-box {
+        top: 30%;
+        left: 7%;
+    }
+
+    .studio-box {
+        top: 34%;
+        left: 23%;
+    }
+
+    .living-area-box {
+        top: 41%;
+        left: 67%;
+    }
+
+    .dining-area-box {
+        top: 43%;
+        left: 40%;
+    }
+
+    .apartment-preview-cont h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .apartment-preview-cont a {
+        font-size: 24px;
+    }
+
 }
