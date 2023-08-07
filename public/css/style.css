@@ -317,7 +317,7 @@ i.hidden, .menu-inner.hidden {
 }
 
 .end_buttons a {
-    font-family: Pamors;
+    font-family: AlteHaas;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 90px;
@@ -375,8 +375,13 @@ i.hidden, .menu-inner.hidden {
 }
 
 .whole_how_to_win {
-    background: url("../images/CS4.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/CS4.png");
     background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
 }
 
 .how-to-win {
@@ -384,7 +389,7 @@ i.hidden, .menu-inner.hidden {
     background-size: 220%;
     background-position: 64% 53%;
     height: 100vh;
-    padding: 15vh 0;
+    padding: 25vh 0;
 }
 
 .how-to-win h1 {
@@ -431,6 +436,7 @@ i.hidden, .menu-inner.hidden {
     display: block;
     width: fit-content;
     margin: 40px auto;
+    cursor: pointer;
 }
 
 .how-to-win a:hover {
@@ -447,7 +453,8 @@ i.hidden, .menu-inner.hidden {
     opacity: 1;
     font-family: AlteHaas;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 12px;
+    line-height: 14px;
     margin-bottom: 14vh;
     position: fixed;
     right: 16px;
@@ -573,9 +580,9 @@ button.accordion-button {
     z-index: 1;
 }
 
-.ap-page .navigation i, .ap-page .navigation li,
+.ap-page .navigation i,
 .ap-page .spotify-player p, .ap-page .right-corner p,
-.ap-page .navigation a, .ap-page .noise p {
+.ap-page .noise p {
     color: black !important;
 }
 
@@ -584,8 +591,13 @@ button.accordion-button {
 }
 
 .ap-page .smile-p {
-    border: 1px solid #651DCC;
     background: transparent;
+}
+
+.navigation .menu-inner {
+    background: black;
+    padding: 10px;
+    border: 3px solid white;
 }
 
 .apply-container {
@@ -607,7 +619,7 @@ button.accordion-button {
     margin-bottom: 6px;
 }
 
-.apply-form-inner .custom-fg input {
+.apply-form-inner .custom-fg input, select {
     width: 100%;
     padding-left: 50%;
     text-align: right;
@@ -618,6 +630,7 @@ button.accordion-button {
     font-size: 23px;
     font-family: AlteHaas;
     padding-right: 5px;
+    outline: none;
 }
 
 .apply-form-inner .custom-fg label {
@@ -838,6 +851,8 @@ button.accordion-button {
     left: 10%;
 }
 
+.single-step
+
 .custom-fg-cb {
     display: flex;
     justify-content: center;
@@ -867,16 +882,22 @@ button.accordion-button {
 }
 
 .apartment-preview-cont p {
-    position: fixed;
-    bottom: 24px;
+    position: relative;
+    bottom: 0;
     margin-bottom: 0;
-    color: black;
+    color: white;
     font-family: AlteHaas;
     text-transform: uppercase;
     text-align: center;
     width: 100%;
     z-index: 10;
     font-weight: 700;
+}
+
+.apartment-preview-cont p.smile-p {
+    background: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .apartment-preview-cont p a {
@@ -909,11 +930,11 @@ button.accordion-button {
     padding: 7px 40px 7px 7px;
 }
 
-.apartment-preview-cont .dot:hover {
+.apartment-preview-cont .dot:hover, .apartment-preview-cont .dot.active {
     z-index: 1000;
 }
 
-.apartment-preview-cont .dot:hover .box {
+.apartment-preview-cont .dot:hover .box, .apartment-preview-cont .dot.active .box {
     display: block;
 }
 
@@ -964,7 +985,7 @@ button.accordion-button {
 
 .apartment-preview-cont h2 {
     text-align: right;
-    font-size: 90px;
+    font-size: 60px;
     font-weight: 600;
     font-family: DentonTextX !important;
     letter-spacing: 0px;
@@ -972,6 +993,7 @@ button.accordion-button {
     opacity: 1;
     font-weight: 700;
     line-height: 1em;
+    margin-bottom: 20px;
 }
 
 
@@ -996,6 +1018,10 @@ button.accordion-button {
     cursor: pointer;
     height: 0;
     width: 0;
+}
+
+.single-step.third-step.active {
+    padding-top: 10vh !important;
 }
 
 /* Create a custom checkbox */
@@ -1057,8 +1083,16 @@ button.accordion-button {
     transform: rotate(45deg);
 }
 
+.custom-fg select {
+    height: 44px;
+}
+
 .accordion-button.collapsed i {
     transform: rotate(0deg);
+}
+
+.college-input {
+    padding-left: 0 !important;
 }
 
 .accordion-button {
@@ -1070,10 +1104,8 @@ button.accordion-button {
 }
 
 .smile-p {
-    padding: 2px 8px;
-    background: white;
     width: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .mobile {
@@ -1090,7 +1122,7 @@ button.accordion-button {
 
 .apply-box a {
     text-align: center;
-    font-size: 32px;
+    font-size: 22px;
     font-family: AlteHaas;
     letter-spacing: 0px;
     color: #000000;
@@ -1107,10 +1139,202 @@ button.accordion-button {
     background: black;
 }
 
+.accordion-body {
+    padding-top: 0 !important;
+    padding-left: 34px;
+}
+
+.images-home {
+    margin: 10vh 0;
+}
+
+.images-home img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+input.empty, .custom-fg.empty, span.empty {
+    border-color: red !important;
+}
+
+.modal.show .modal-dialog {
+    margin-top: 20vh;
+}
+
+.modal.show .modal-dialog p {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    font-family: AlteHaas;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal.show .modal-dialog button {
+    font-family: AlteHaas;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+    padding: 10px 40px;
+    border: 1px solid black;
+    border-radius: 35px;
+    display: block;
+    width: fit-content;
+    margin: 40px auto 0;
+    cursor: pointer;
+    background: white;
+}
+
+.socials-label {
+    width: 100%;
+    height: 43px;
+    top: 0 !important;
+    left: 0 !important;
+    border: 3px solid white;
+    background: black;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.socials-label i {
+    float: right;
+    font-size: 10px;
+    position: relative;
+    top: 7px;
+    right: 5px;
+}
+
+.socials-label.active i {
+    transform: rotate(180deg);
+}
+
+.college-div {
+    display: none;
+}
+
+.socials-inner {
+    display: none;
+    margin-top: 43px;
+}
+
+.socials-inner input {
+    margin-top: 8px;
+}
+
+.socials-inner.active, .college-div.active {
+    display: block;
+}
+
+img.render {
+    width: 12%;
+    position: absolute;
+    z-index: 10;
+    right: 2% !important;
+    top: 12%;
+    left: unset;
+}
+
+
+
 @media only screen and (max-width: 768px) {
+
+    img.render {
+        width: 23%;
+    }
+
+    .navigation.active {
+        height: 100vh;
+        left: 0;
+        top: 0;
+        padding: 16px;
+        background: black;
+        width: 100%;
+    }
+
+    .navigation .menu-inner {
+        padding: 0;
+        height: 100%;
+        border: none;
+    }
+
+    .how-to-win a {
+        margin-top: 0 !important;
+    }
+
+    .how-to-win h3 {
+        margin-bottom: 15px;
+    }
+
+    .apply-form-inner .custom-fg input, select {
+        padding-left: 0 !important;
+    }
+
+    .cb-buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .third-step p {
+        font-size: 14px;
+    }
+
+    .third-step h2 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .cb-buttons button:first-child {
+        margin-right: 0;
+    }
+
+    .accordion-body {
+        padding-left: 32px;
+    }
+
+    label[for="state"] {
+        top: 80px !important;
+    }
+
+    .socials-label i {
+        top: 12px;
+    }
+
+    .college-input::placeholder {
+        opacity: 0 !important;
+    }
+
+    label.mobile {
+        margin-top: 8px;
+    }
+
+    .socials-inner {
+        margin-top: 0;
+    }
+    select#state {
+        margin-top: 38px !important;
+    }
+
+    label.socials-label {
+        font-size: 22px !important;
+        border: none;
+        height: fit-content;
+        margin-top: 5px;
+    }
+
+    .right-corner p {
+        font-size: 8px;
+        line-height: 11px;
+    }
 
     .apartment-preview-cont .dot .box {
         padding: 7px !important;
+    }
+
+    .end_buttons {
+        margin-top: 25vh;
     }
 
     .apartment-preview-cont .dot .box h4 {
@@ -1122,10 +1346,6 @@ button.accordion-button {
     .apartment-preview-cont .dot .box p {
         font-size: 12px !important;
         white-space: normal;
-    }
-
-    .apartment-preview-cont p {
-        bottom: 10vh;
     }
 
     .apartment-preview-cont p, .apartment-preview-cont a {
@@ -1142,10 +1362,13 @@ button.accordion-button {
 
     .homepage_topheader {
         flex-direction: column !important;
+        margin-top: 10vh !important;
     }
     .homepage_topheader h1 {
         font-size: 46px !important;
         line-height: unset;
+        margin-bottom: 0;
+        line-height: 46px;
     }
 
     .homepage_hero h2 {
@@ -1159,7 +1382,7 @@ button.accordion-button {
 
     .tcs-logos img:first-child {
         right: 120px !important;
-        top: 0;
+        top: -36px;
     }
 
     .tcs-logos {
@@ -1172,7 +1395,7 @@ button.accordion-button {
 
     .tcs-logos img:last-child {
         right: 140px;
-        top: 2px;
+        top: -34px;
     }
 
     .horizontal_header h2 {
@@ -1204,13 +1427,34 @@ button.accordion-button {
     }
 
     .homepage_hero h5 {
-        font-size: 20px !important;
-        margin-top: 10vh;
+        font-size: 16px !important;
+        margin-top: 4vh;
+        line-height: 24px;
     }
 
     .how-to-win {
-        background-size: 450% !important;
+        background-size: 700% !important;
         background-position: 60% 60% !important;
+        padding: 13vh 0 !important;
+    }
+
+    .how-to-win h1 {
+        font-size: 45px;
+        margin-top: 55px;
+    }
+
+    .right-corner {
+        position: absolute;
+    }
+
+    .how-to-win h3, .how-to-win a {
+        font-size: 14px;
+    }
+
+    .numbers {
+        font-size: 26px;
+        width: 40px;
+        height: 40px;
     }
 
     .accordion-button {
@@ -1304,10 +1548,6 @@ button.accordion-button {
         width: 90%;
     }
 
-    .accordion-body {
-        padding-top: 0 !important;
-    }
-
     .entry-area-box {
         top: 30%;
         left: 7%;
@@ -1329,12 +1569,12 @@ button.accordion-button {
     }
 
     .apartment-preview-cont h2 {
-        font-size: 50px;
+        font-size: 30px;
         margin-bottom: 20px;
     }
 
     .apartment-preview-cont a {
-        font-size: 24px;
+        font-size: 12px !important;
     }
 
 }

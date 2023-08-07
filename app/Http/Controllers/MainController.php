@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Apply;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class MainController extends Controller
 {
@@ -38,14 +39,20 @@ class MainController extends Controller
             'last_name' => $request->last_name,
             'birth_date' => $request->birth_date,
             'email' => $request->email,
-            'socials' => $request->socials,
+            'ig' => $request->ig,
+            'tt' => $request->tt,
+            'web' => $request->web,
+            'other' => $request->other,
             'education' => $request->education,
+            'college' => $request->college,
             'city' => $request->city,
             'why' => $request->why,
             'goals' => $request->goals,
             'impacts' => $request->impact,
             'about' => $request->about
         ]);
+
+        Session::flash('message', 'You successfully applied for the apartment!');
 
         return redirect()->route('show-homepage');
     }

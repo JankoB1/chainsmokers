@@ -2,6 +2,19 @@
 
 @section('content')
 
+    @if(Session::has('message'))
+        <div class="modal modal-ip" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p>You successfully applied for the apartment!<br>
+                        <button type="button">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endif
+
     <div class="homepage-container">
         <section class="homepage">
             <div class="homepage_hero">
@@ -35,7 +48,11 @@
             </div>
         </section>
 
-        <div class="sticky-container">
+        <div class="video-inner">
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/846603546?h=663f90ba7e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="TheSmile_TCS_AIR_Apt_Giveaway_Horizontal_FINAL_Youtube_TikTok_IG_Native"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+
+        <div class="sticky-container desc">
             <main>
                 <section class="horizontal_header">
                     <div>
@@ -81,14 +98,38 @@
                     <img style="height: 29vh; margin: 0 25px;" src="{{ asset('images/TCS2.png') }}" alt="photo">
                 </section>
                 <section>
-                    <img style="height: 60vh; margin-right: 30vw;" src="{{ asset('images/TCS5.png') }}" alt="photo">
+                    <img style="height: 60vh; margin-right: 10vw;" src="{{ asset('images/TCS5.png') }}" alt="photo">
                 </section>
             </main>
         </div>
 
-        <div class="video-inner">
-            <div style=“padding:56.25% 0 0 0;position:relative;“><iframe src=“https://player.vimeo.com/video/846603546?h=663f90ba7e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479” frameborder=“0" allow=“autoplay; fullscreen; picture-in-picture” allowfullscreen style=“position:absolute;top:0;left:0;width:100%;height:100%;” title=“TheSmile_TCS_AIR_Apt_Giveaway_Horizontal_FINAL_Youtube_TikTok_IG_Native”></iframe></div><script src=“https://player.vimeo.com/api/player.js”></script>
-        </div>
+{{--        <div class="images-home mobile">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-12">--}}
+{{--                    <img src="{{ asset('images/TCS9.png') }}" alt="">--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-4">--}}
+{{--                    <img src="{{ asset('images/TCS8.png') }}" alt="">--}}
+{{--                </div>--}}
+{{--                <div class="col-4">--}}
+{{--                    <img src="{{ asset('images/TCS11.png') }}" alt="">--}}
+{{--                </div>--}}
+{{--                <div class="col-4">--}}
+{{--                    <img src="{{ asset('images/TCS12.png') }}" alt="">--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-4">--}}
+{{--                    <img src="{{ asset('images/TCS1.png') }}" alt="">--}}
+{{--                    <img src="{{ asset('images/TCS2.png') }}" alt="">--}}
+{{--                </div>--}}
+{{--                <div class="col-8">--}}
+{{--                    <img src="{{ asset('images/TCS5.png') }}" alt="">--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
         <div class="end_buttons">
             <div class="apply-here-cont">

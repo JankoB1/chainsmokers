@@ -1,24 +1,54 @@
 let currentStep = 1;
-
 let applyContainer = document.querySelector('.apply-container');
-
 let firstStep = document.querySelector('.first-step');
 let secondStep = document.querySelector('.second-step');
 let thirdStep = document.querySelector('.third-step');
-
 let prevButton = document.querySelector('.steps-buttons button.prev');
 let nextButton = document.querySelector('.steps-buttons button.next');
-
 let prevButtonCb = document.querySelector('.cb-buttons .cb-prev');
-
-let singleStepInputs = document.querySelectorAll('.single-step input');
+let nextButtonCb = document.querySelector('.cb-buttons .cb-next');
+let singleStepInputs = document.querySelectorAll('.single-step input.required');
 let whyTextarea = document.querySelector('textarea#why');
-
 let appContainer = document.querySelector('div#app');
+let tcInput = document.querySelector('.third-step input');
+let socialsLabel = document.querySelector('.socials-label');
+let educationSelect = document.querySelector('#education');
+let collegeInput = document.querySelector('.college-input');
 
 function scrollToUp() {
     appContainer.scrollIntoView();
 }
+
+educationSelect.addEventListener('change', function() {
+    if(this.value !== 'High school or equivalent' && this.value !== 'Other') {
+        collegeInput.parentElement.classList.add('active');
+    } else {
+        collegeInput.parentElement.classList.remove('active');
+    }
+});
+
+socialsLabel.addEventListener('click', function () {
+    this.parentElement.querySelector('.socials-inner').classList.toggle('active');
+    this.classList.toggle('active');
+});
+
+singleStepInputs.forEach((singleInput) => {
+    singleInput.addEventListener('input', function() {
+        if(singleInput.value === '') {
+            singleInput.classList.add('empty');
+        } else {
+            singleInput.classList.remove('empty');
+        }
+    });
+});
+
+whyTextarea.addEventListener('input', function() {
+    if(this.value === '') {
+        this.parentElement.classList.add('empty');
+    } else {
+        this.parentElement.classList.remove('empty');
+    }
+});
 
 prevButton.addEventListener('click', function() {
     let activeStep = document.querySelector('.single-step.active');
@@ -39,6 +69,7 @@ nextButton.addEventListener('click', function () {
             if(input.value === '') {
                 if(!empty) {
                     input.focus();
+                    input.classList.add('empty');
                     input.scrollIntoView();
                     empty = true;
                 }
@@ -68,6 +99,7 @@ nextButton.addEventListener('click', function () {
             scrollToUp();
         } else {
             whyTextarea.focus();
+            whyTextarea.parentElement.classList.add('empty');
             whyTextarea.scrollIntoView();
         }
     }
@@ -86,4 +118,17 @@ prevButtonCb.addEventListener('click', function() {
 
     currentStep--;
     scrollToUp();
+});
+
+tcInput.addEventListener('click', function() {
+    tcInput.parentElement.querySelector('span').classList.remove('empty');
+});
+
+nextButtonCb.addEventListener('click', function(e) {
+    e.preventDefault();
+    if(tcInput.checked) {
+        this.parentElement.parentElement.parentElement.submit();
+    } else {
+        tcInput.parentElement.querySelector('span').classList.add('empty');
+    }
 });

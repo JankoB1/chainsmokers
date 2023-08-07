@@ -18,9 +18,14 @@ class CreateAppliesTable extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->string('birth_date');
-            $table->string('socials');
+            $table->string('ig')->nullable();
+            $table->string('tt')->nullable();
+            $table->string('web')->nullable();
+            $table->string('other')->nullable();
             $table->string('education');
+            $table->string('college')->nullable();
             $table->string('city');
+            $table->string('state');
             $table->string('email');
             $table->string('why');
             $table->string('goals')->nullable();

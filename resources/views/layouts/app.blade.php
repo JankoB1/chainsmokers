@@ -42,7 +42,7 @@
 
         <div class="noise">
             <p>Powered by</p>
-            <img src="{{ asset('images/logo-new.png') }}" alt="noise" width="130">
+            <img src="{{ asset('images/logo-new.png') }}" alt="noise" width="100">
         </div>
 
         <div class="navigation">

@@ -5,12 +5,19 @@
     <div class="apartment-preview-cont">
         <div class="image-preview-inner">
 
+            <div class="apply-box mobile">
+                <h2>This could be<br>your home</h2>
+                <a href="{{ route('show-apply') }}">Apply here</a>
+            </div>
+
 {{--            <h2>This could be<br>your home</h2>--}}
+
+            <img src="{{ asset('images/render-min.png') }}" class="render" alt="">
 
             <img src="{{ asset('images/CS01-min.png') }}" class="desc" alt="apartment preview render">
             <img src="{{ asset('images/CS-MOBILE2.jpeg') }}" class="mobile" alt="apartment preview render">
 
-            <div class="apply-box">
+            <div class="apply-box desc">
                 <h2>This could be<br>your home</h2>
                 <a href="{{ route('show-apply') }}">Apply here</a>
             </div>
@@ -86,7 +93,24 @@
             </div>
 
         </div>
-        <p>Learn more about the project by <a href="#">The Smile</a></p>
+        <p class="smile-p">Learn more about the project by <a href="https://www.thesmile.com/">The Smile</a></p>
     </div>
 
+@endsection
+
+@section('scriptsBottom')
+    <script>
+        if(window.innerWidth < 768) {
+            let dots = document.querySelectorAll('.dot');
+            dots.forEach((dot) => {
+                dot.addEventListener('click', function () {
+                    let activeDot = document.querySelector('.dot.active');
+                    if(activeDot) {
+                        activeDot.classList.remove('active');
+                    }
+                    dot.classList.toggle('active');
+                });
+            });
+        }
+    </script>
 @endsection
